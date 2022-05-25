@@ -59,7 +59,7 @@ def getResponse(ints, intents_json):
 import tkinter
 from tkinter import *
 
-def seend():
+def send():
   msg = EntryBox.get("1.0", 'end-1c').strip()
   EntryBox.delete("0.0", END)
   
@@ -96,7 +96,7 @@ SendButton = Button(root, font=("Verdana", 12, 'bold'), text="Send", width="12",
 # create the box to enter message
 EntryBox = Text(root, bd=0, bg="white",width="29", height="5", font="Arial")
 
-# place componentson screen
+# place components on screen
 scrollbar.place(x=376,y=6, height=386)
 ChatBox.place(x=6,y=6, height=386, width=370)
 EntryBox.place(x=128, y=401, height=90, width=265)
